@@ -5,4 +5,4 @@ apt-get install -y ssh
 CONFIG=/etc/ssh/sshd_config
 sed -i s?"prohibit-password"?"yes"?g ${CONFIG}
 #restart ssh service
-systermctl restart sshd 
+systemctl restart sshd 
